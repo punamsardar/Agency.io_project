@@ -5,10 +5,10 @@ import TrustedBy from "./components/TrustedBy";
 import Services from "./components/Services";
 import OurWork from "./components/OurWork";
 import Team from "./components/Teams";
+import ContactUs from "./components/ContactUs";
 
 import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer";
-import ContactUs from "./components/ContactUs";
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -51,6 +51,7 @@ function App() {
       <OurWork />
       <Team />
       <ContactUs />
+
       <Footer theme={theme} />
 
       {/* Custom cursor Ring */}
